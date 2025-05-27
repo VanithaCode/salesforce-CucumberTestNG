@@ -1,1 +1,1 @@
-# salesforce-CucumberTestNG
+# Salesforce-Structured_POM

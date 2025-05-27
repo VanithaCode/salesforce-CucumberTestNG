@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="automation.utilities.SalesforceListnersUtility"></listener>
+	</listeners>
+	<test thread-count="5" parallel="false" name="Test">
+	  <parameter name="browserName" value="chrome"></parameter>
+	  <classes>
+			 <!-- <class name="salesfource.automationTest.LoginPageTest"/>  
+	    		 <class name="salesfource.automationTest.UserMenuDropDownTest">
+	    		 
+	    		 </class> -->
+	    		  <class name="salesfource.automationTest.CreateAccount">
+	    		  <methods>
+	    		  <include name="CreateNewView"></include>
+	    		  </methods> 
+	    		  </class>
+<!-- 	    		 <class name="salesfource.automationTest.RandomScenarios"/> 
+ -->	
+	    
+		
+	      
+	  </classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
